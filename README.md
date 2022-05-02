@@ -1,12 +1,12 @@
-# Global_Proteome_Analysis
+**# Global_Proteome_Analysis
 
 Manual for Python script for the analysis of large-scale temporal proteomics data
 
-Data input
+Data input**
 
 Changes in protein abundances between different time points using the TMT quantification option provided by the PEAKS Q software tool. Each TMT-experiment was analyzed separately. Auto normalization was used for quantitative analysis of the proteins, in which the global ratio was calculated from the total intensity of all labels in all quantifiable peptides. Quantitative analysis was performed using protein identifications containing at least 2 unique peptides, which peptide identifications were filtered against 1% FDR. However, the number of unique peptides for a positive protein quantification could be altered here. The significance method for evaluating the observed abundance changes was set to ANOVA and the significance score was expressed as the -10xlog10(p), where p is the significance testing p-value. The p-value represents the likelihood that the observed change is caused by random chance. Results from PEAKS Q were exported to “proteins.csv”, containing the quantified proteins for each analysis separately. This file was used as data input for the proteomics data analysis pipeline in Python. These quantification files need to be placed in the folder “crude_data” before the Python analysis. Furthermore, to access the simplified Central Carbon Metabolism KEGG database, an Excel file “Simplified Enzymes Central Carbon Metabolic Pathway.xlsx” should be located in the folder “KEGG_GO_Uniprot”.
 
-Script
+**Script**
 
 This script consists of several consecutive sections, of which the content and functions will be explained below. This script is dependent on the functions in the “all_proteomics_functions.py” file. To this end, the “all_proteomics_functions.py” is run first to import all functions. 
 
