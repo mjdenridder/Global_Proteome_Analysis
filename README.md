@@ -1,4 +1,4 @@
-**# Global_Proteome_Analysis
+** # Global_Proteome_Analysis
 
 Manual for Python script for the analysis of large-scale temporal proteomics data
 
